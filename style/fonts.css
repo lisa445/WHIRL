@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'InterB';
+    src: url("../fonts/Inter/Inter-Bold.otf");
+}
+@font-face {
+    font-family: 'InterL';
+    src: url("../fonts/Inter/Inter-Light.otf");
+}
+@font-face {
+    font-family: 'InterR';
+    src: url("../fonts/Inter/Inter-Regular.otf");
+}
+@font-face {
+    font-family: 'InterI';
+    src: url("../fonts/Inter/Inter-Italic.otf");
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url("../fonts/Fraunces/Fraunces.ttf");
+}

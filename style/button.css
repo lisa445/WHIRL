@@ -1,0 +1,31 @@
+.primary, .secondary{
+    font-weight: 400;
+    font-size: 17px;
+    font-family: 'InterL';
+    border: none;
+    cursor: pointer;
+}
+
+
+.primary{
+    color:white;
+    background: var(--maincolor);
+    padding: 8px 32px;
+    
+}
+
+
+.secondary{
+    color: var(--maincolor);
+    background: transparent;
+    padding-top: 8px;
+    padding-bottom:8px;
+}
+
+.primary:hover{
+    background: #013a52;
+}
+
+.secondary:hover{
+    color:#013a52;
+}

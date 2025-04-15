@@ -7,3 +7,139 @@ body, p, h1, h2, h3, h4, h5, h6{
     --maincolor:#0070A0;
     --fontcolor:#1F1F1F;
 }
+
+/*Шапка сайта*/
+
+
+.header_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo_nav{
+    display: flex;
+    align-items: center;
+}
+.logo_nav  nav > a{
+    text-decoration: none;
+    color: var(--fontcolor);
+    font-family: 'InterL';
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.logo_nav img{
+    margin-right: 20px;
+}
+.logo_nav nav > a:last-child {
+    margin-right: 0;
+}
+
+.logo_nav nav a:hover{
+    color: #013a52;
+}
+
+.buttons{
+    display: flex;
+}
+.buttons button:first-child{
+    margin-right: 20px;
+}
+
+/*Заглавное изображение*/
+.header_img{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+.header_text{
+    width: 525px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 153px;
+}
+
+.header_text h1, .header_text h2{
+    font-weight: 400;
+   
+}
+.header_text h1{
+    font-family: 'Fraunces';
+    font-size: 58px;
+    margin-bottom: 21px;
+}
+
+.header_text h2{
+    font-family: 'InterL';
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 29px;
+}
+
+/*Компании*/
+
+.header_companies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+.header_companies h1{
+    font-weight: 400;
+    font-family: 'InterL';
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.header_compimg img{
+    margin-right: 61px;
+}
+.header_compimg img:last-child{
+    margin-right: 0px;
+}
+
+/*Цветные блоки*/
+.color_blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    
+}
+.color_block{
+    font-weight: 400;
+    width: 355px;
+    padding: 40px 32px;
+    
+    margin-right: 32px;
+}
+
+.color_block h1{
+    font-size: 25px;
+    font-family: 'Fraunces';
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.color_block p{
+    line-height: 24px;
+    font-size: 15px;
+    font-family: 'InterL';
+    width: 90%;
+}
+
+.color_block:first-child{
+    background: #FAEA73;
+}
+.color_block:last-child{
+    background: #F7CEDC;
+    margin-right: 0;
+}
+.color_block:nth-child(2){
+    background: #CCEFF6;
+}
