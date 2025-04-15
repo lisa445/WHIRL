@@ -113,10 +113,10 @@ body, p, h1, h2, h3, h4, h5, h6{
 }
 .color_block{
     font-weight: 400;
-    width: 355px;
+    width: 291px; 
+    height: 170px;
     padding: 40px 32px;
-    
-    margin-right: 32px;
+    margin-right: 31px;
 }
 
 .color_block h1{
@@ -130,7 +130,6 @@ body, p, h1, h2, h3, h4, h5, h6{
     line-height: 24px;
     font-size: 15px;
     font-family: 'InterL';
-    width: 90%;
 }
 
 .color_block:first-child{
@@ -142,4 +141,38 @@ body, p, h1, h2, h3, h4, h5, h6{
 }
 .color_block:nth-child(2){
     background: #CCEFF6;
+}
+
+/*Аккордеон*/
+.accordion{
+    background:#F7F9FA;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    width: 500px;
+}
+
+.accordion h1, .description details summary{
+    font-family: 'Fraunces';
+    font-weight: 400;
+}
+
+.accordion h1{
+    font-size: 39px;
+    align-self: flex-start;
+}
+
+.description details summary{
+    font-size: 21px;
+}
+
+.description details p{
+    font-weight: 400;
+    font-family: 'InterL';
+    line-height: 24px;
 }
