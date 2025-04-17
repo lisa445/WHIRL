@@ -8,9 +8,21 @@ body, p, h1, h2, h3, h4, h5, h6{
     --fontcolor:#1F1F1F;
 }
 
+p, h1, h2,a{
+    font-weight: 400;
+}
+.accordion h1, .description details summary, .desc_point h2, .header_text h1, .color_block h1, .whirl_desc h1, .blue_desc h1, 
+.header_task h1, .task_desc h2
+{
+    font-family: 'Fraunces';
+}
+
+.logo_nav  nav > a,.header_text h2, .header_companies h1, .color_block p, .description details p, .desc_point p, .blue_desc p, .blue_desc ul li,
+.header_task p, .task_desc p
+{
+    font-family: 'InterL';
+}
 /*Шапка сайта*/
-
-
 .header_main{
     display: flex;
     align-items: center;
@@ -26,9 +38,7 @@ body, p, h1, h2, h3, h4, h5, h6{
 .logo_nav  nav > a{
     text-decoration: none;
     color: var(--fontcolor);
-    font-family: 'InterL';
     font-size: 15px;
-    font-weight: 400;
     margin-right: 20px;
 }
 
@@ -64,18 +74,12 @@ body, p, h1, h2, h3, h4, h5, h6{
     margin-right: 153px;
 }
 
-.header_text h1, .header_text h2{
-    font-weight: 400;
-   
-}
 .header_text h1{
-    font-family: 'Fraunces';
     font-size: 58px;
     margin-bottom: 21px;
 }
 
 .header_text h2{
-    font-family: 'InterL';
     font-size: 20px;
     width: 70%;
     margin-bottom: 29px;
@@ -90,8 +94,6 @@ body, p, h1, h2, h3, h4, h5, h6{
     margin-top: 120px;
 }
 .header_companies h1{
-    font-weight: 400;
-    font-family: 'InterL';
     font-size: 24px;
     margin-bottom: 24px;
 }
@@ -121,7 +123,6 @@ body, p, h1, h2, h3, h4, h5, h6{
 
 .color_block h1{
     font-size: 25px;
-    font-family: 'Fraunces';
     margin-top: 12px;
     margin-bottom: 12px;
 }
@@ -129,7 +130,6 @@ body, p, h1, h2, h3, h4, h5, h6{
 .color_block p{
     line-height: 24px;
     font-size: 15px;
-    font-family: 'InterL';
 }
 
 .color_block:first-child{
@@ -144,23 +144,23 @@ body, p, h1, h2, h3, h4, h5, h6{
 }
 
 /*Аккордеон*/
+/*Незаконченный, нужно доделать*/
 .accordion{
     background:#F7F9FA;
-    margin-top: 120px;
+    margin-top: 120px;    
+}
+
+.description{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.description{
-    width: 500px;
+.description div{
+    width: 486px;
+    margin-right: 140px;
 }
 
-.accordion h1, .description details summary{
-    font-family: 'Fraunces';
-    font-weight: 400;
-}
 
 .accordion h1{
     font-size: 39px;
@@ -170,9 +170,95 @@ body, p, h1, h2, h3, h4, h5, h6{
 .description details summary{
     font-size: 21px;
 }
-
 .description details p{
-    font-weight: 400;
-    font-family: 'InterL';
     line-height: 24px;
+}
+
+/*Описание Whirl*/
+.whirl_desc{
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc_point{
+    width:223px;
+    margin-right: 32px;
+}
+
+.desc_point:last-child{
+    margin-right:0;
+}
+
+.whirl_desc h1{
+    font-size: 41px;
+    line-height: 51px;
+    width: 260px;
+    margin-right: 135px;
+}
+
+.desc_point h2, .task_desc h2{
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.desc_point h2:first-child{
+    margin-top: 62px;
+}
+
+
+.desc_point p, .task_desc p {
+    margin-top:11px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/*Темно-синяя секция с описанием*/
+/*Отредактировать список*/
+.blue_block{
+    background:var(--maincolor);
+    color: white;
+    margin-top: 120px;
+    padding: 80px 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blue_desc{
+    width: 500px;
+    margin-left: 187px;
+}
+.blue_desc h1, .header_task h1{
+    font-size: 42px;
+    margin-bottom: 21px;
+}
+
+.blue_desc p, .blue_desc ul li, .header_task p{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/*Автоматизированные задачи*/
+/*Сделать одинаково ровным заголовок и описания*/
+.automated_task{
+    margin-top: 120px;
+}
+.header_task{
+    width: 50%;
+    margin-bottom: 68px;
+    margin-left: 180px;
+}
+.automated_task_desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task_desc {
+    width: 235px;
+    margin-right:64px;
+}
+.task_desc:last-child{
+    margin-right: 0;
 }
