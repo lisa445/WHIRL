@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('font/Fraunces.ttf');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('font/Inter_18pt-Regular.ttf');
+}
+:root{
+    --blue:#CCEFF6;
+    --dark-blue:#0070A0;
+    --pink:#F7CEDC;
+    --yellow:#FAEA73;
+    --gray:#F7F9FA;
+    --dark-gray:#1F1F1F;
+
+    --Fraunces: 'Fraunces', sans-serif;
+    --Inter: 'Inter', sans-serif;
+}
+body{
+    font-size: 16px;
+    font-family: var(--Inter);
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1130px;
+}
+
+/*Header*/
+.header{
+    padding: 20px 0;
+}
+.header .container, 
+.header_nav, 
+.link_wrapper,
+.header_wrapper, 
+.welcome_section .container, 
+.welcome_desc,
+.companies_section .container,
+.company{
+    display: flex;
+    align-items: center;
+}
+
+.header .container{
+    justify-content: space-between;
+}
+.header_wrapper{
+    gap: 24px;
+}
+.header_nav{
+    gap: 24px;
+}
+.nav_link{
+    font-family: var(--Inter);
+    color: var(--dark-gray);
+    line-height: 24px;
+}
+.header .container .link_wrapper{
+    gap: 10px;
+}
+/*link-btn*/
+a[class$="_link_btn"]{
+    display: block;
+    padding: 10px 22px;
+    text-align: center;
+}
+.primary_link_btn{
+    background: var(--dark-blue);
+    color: white;
+}
+.secondary_link_btn{
+    color: var(--dark-blue);
+    background: white;
+}
+
+/*Fonts*/
+.title{
+    font-family: var(--Fraunces);
+    font-size: 58px;
+    line-height: 63.8px;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.main_text{
+    font-family: var(--Inter);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*welcome section*/
+.welcome_section{
+    padding-top: 70px;
+    padding-bottom:80px;
+    margin-bottom: 40px;
+}
+.welcome_section .container{
+    justify-content: space-between;
+}
+.welcome_desc, .companies_section .container{
+    flex-direction: column; 
+}
+.welcome_desc{
+    width: 525px;
+    align-items: flex-start;
+}
+.welcome_desc .link_wrapper{
+    gap: 24px;
+    margin-top: 30px;
+}
+.welcome_desc .main_text{
+    max-width: 380px;
+}
+.welcome_desc .link_wrapper a[class$="_link_btn"]{
+    padding: 11px 33px;
+}
+
+/*Companies*/
+.companies_section{
+    margin-bottom: 160px;
+}
+.companies_section .container{
+    align-items: center;
+}
+.company{
+    gap:60px;
+    margin-top: 25px;
+}
+
+/**/
