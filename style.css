@@ -34,6 +34,9 @@ body{
 a{
     text-decoration: none;
 }
+li{
+    list-style-type: none;
+}
 .container{
     margin: 0 auto;
     max-width: 1130px;
@@ -59,7 +62,13 @@ a{
 .blog_post,
 .blog_post_text_wrapper,
 .section_start_wrapper,
-.start_wrapper
+.start_wrapper,
+.logo_footer_wrapper span,
+.footer_media,
+.footer_wrapper,
+.footer .container,
+.footer_media span,
+.social_media
 {
     display: flex;
     align-items: center;
@@ -75,7 +84,9 @@ a{
 .section_blog .container,
 .blog_post,
 .blog_post_text_wrapper,
-.section_start_wrapper{
+.section_start_wrapper,
+.footer .container
+{
     flex-direction: column; 
 }
 
@@ -84,7 +95,9 @@ a{
 .section_blue_about .container,
 .welcome_section .container,
 .about_desc,
-.blog_text_wrapper
+.blog_text_wrapper,
+.footer_wrapper,
+.footer_media
 {
     justify-content: space-between;
 }
@@ -97,7 +110,8 @@ a{
 .task_adv,
 .blog_post,
 .blog_post_text_wrapper,
-.section_start_wrapper
+.section_start_wrapper,
+.logo_footer_wrapper span
 {
     align-items: flex-start;
 }
@@ -105,7 +119,8 @@ a{
 .advantages_section .container,
 .whirl_about,
 .task_adv_wrapper,
-.blog_post_wrapper
+.blog_post_wrapper,
+.footer_navigation
 {
     display: grid;
 }
@@ -406,4 +421,59 @@ a[class$="_link_btn"]{
     color: #626A72;
     font-size: 13px;
     line-height: 21px;
+}
+
+/*Footer*/
+.logo_footer_wrapper span, .footer_media span{
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer_wrapper{
+    width: 100%;
+    margin-bottom: 64px;
+}
+.logo_container{
+    align-self: flex-start;
+}
+.footer_info h3, .footer_form h3{
+    margin-bottom: 16px;
+    color: var(--dark-gray);
+    font-size: 15px;
+    line-height: 24px;
+}
+.footer_media{
+    width: 100%;
+    padding:35px 0;
+    border-top: 1px solid #DEE5EB;
+}
+.footer_form p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+.footer_info ul li{
+    margin-bottom: 10px;
+}
+.footer_info ul li a{
+    color: #626A72;
+    font-size: 14px;
+    line-height: 20px; 
+}
+.footer_navigation{
+    grid-template-rows: repeat(1,auto);
+    grid-template-columns: repeat(3, auto);
+    column-gap: 90px;
+}
+.footer_form{
+    width: 220px;
+}
+.footer_media span{
+    font-size: 13px;
+    line-height: 20px;
+}
+.footer_media span a, .logo_footer_wrapper span a{
+    color: var(--dark-blue);
+}
+.social_media{
+    gap:20px;
 }
